@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- Custom Theme files -->
+    <link href="../static/login_style/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <!-- portfolio -->
+    <link href="../static/login_style/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="../static/login_style/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+
+<body>
+    <section class="inner-banner" id="home">
+        <div class="header-top-w3layouts text-right">
+            <ul id="menu">
+            </ul>
+        </div>
+        <!-- //Navigation -->
+        <!-- //banner -->
+        <div class="inner-page-info text-center">
+            <ol class="breadcrumb text-center mx-auto">
+                <li class="breadcrumb-item">
+                    <a href="/">主頁</a>
+                </li>
+                <li class="breadcrumb-item active">註冊</li>
+                <li class="breadcrumb-item">
+                    <a href="/login">登入</a>
+            </ol>
+            <!---->
+        </div>
+    </section>
+    <!-- /contact -->
+    <section class="wedo py-lg-5 py-5">
+        <div class="container py-lg-5 py-3">
+            <div class="text-center">
+                <h3 class="tittle_head">加入我們</h3>
+                <p class="main_p mt-4 mb-4 pt-2 text-center mx-auto">從北台灣到南台灣，只要你有私藏的口袋名單想分享，或者是店家附近有景點的，或者是你有私藏的口袋景點想要告訴人</p>
+            </div>
+            <div class="contact-info row py-5">
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="contact-right">
+                        <h2 class="mb-3">加入我們可以一起討論景點、秘境、私人口袋美食，分享你的私藏</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 contact-form">
+                    <form action="#" method="post">
+                        <div class="fields-grid">
+                            <div class="styled-input agile-styled-input-top">
+                                <label>使用者名稱 *</label>
+                                <input name="Name" type="text" class="form-control" placeholder="姓名" required="required" minlength="2">
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <label>帳號 *</label>
+                                <input type="text" class="form-control" id="name" placeholder="帳號" name="Account" required="required">
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <label>電子信箱 *</label>
+                                <input name="Email" class="form-control" type="Email" placeholder="電子郵件地址" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                            </div>
+                            <div class="styled-input">
+                                <label>密碼 *</label>
+                                <input id="inputPassword" name="Pwd" class="form-control" type="password" placeholder="設定密碼(格式:含英數至少六個字元)" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" required="required" oninput="setCustomValidity('');" oninvalid="setCustomValidity('請輸入正確的密碼格式:含英數至少六個字元');"/>
+                            </div>
+                            <div class="styled-input">
+                                <label>確認密碼 *</label>
+                                <input id="ConfirmPassword" name="ConfirmPwd" class="form-control" type="password" placeholder="確認密碼" required="required" oninput="setCustomValidity('');" onchange="if(document.getElementById('inputPassword').value != document.getElementById('ConfirmPassword').value){setCustomValidity('密碼不吻合');}"/>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="submit" value="註冊">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

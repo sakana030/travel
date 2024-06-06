@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- Custom Theme files -->
+    <link href="../static/login_style/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <!-- portfolio -->
+    <link href="../static/login_style/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="../static/login_style/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+
+<body>
+    <section class="inner-banner" id="home">
+        <div class="header-top-w3layouts text-right">
+            <ul id="menu">
+            </ul>
+        </div>
+        <!-- //Navigation -->
+        <!-- //banner -->
+        <div class="inner-page-info text-center">
+            <ol class="breadcrumb text-center mx-auto">
+                <li class="breadcrumb-item">
+                    <a href="/">主頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="./contact">註冊</a>
+                <li class="breadcrumb-item active">登入</li>
+            </ol>
+            <!---->
+        </div>
+    </section>
+    <!-- /contact -->
+    <section class="wedo py-lg-5 py-5">
+        <div class="container py-lg-5 py-3">
+            <div class="text-center">
+                <h3 class="tittle_head">登入</h3>
+                <p class="main_p mt-4 mb-4 pt-2 text-center mx-auto">旅遊就是治癒內心、放鬆心情、陶冶心性的方法</p>
+            </div>
+            <div class="contact-info row py-5">
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="contact-right">
+                        <h2 class="mb-3">立即登入，與你有相同興趣的人一起分享你的旅途趣事</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 contact-form">
+                    <form action="#" method="post">
+                        <div class="fields-grid">
+                            <div class="styled-input agile-styled-input-top">
+                                <label>帳號 *</label>
+                                <input type="text" class="form-control" id="name" placeholder="" name="account" required="required">
+
+                            </div>
+                            <div class="styled-input">
+                                <label>密碼 *</label>
+                                <input type="password" class="form-control" id="name" placeholder="" name="pwd" required="required">
+                            </div>
+                        </div>
+                        <label>{{msg}}</label>
+                        <br>
+                        <input type="submit" value="登入">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
