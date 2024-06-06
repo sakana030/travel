@@ -1,0 +1,43 @@
+.level-1 a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.level-1 li{
+	position: relative;
+}
+.level-1 li + li a::before{
+	content: '';
+	position: absolute;
+	border-top: 1px solid rgb(255,255,255,.4);
+	left: 10px;
+	right: 10px;
+	top: 0;
+}
+.level-1 a .county{
+	margin-right: -1.1em;
+	transform: scale(0);
+	transition: .3s;
+}
+.level-1 li:hover .county{
+	margin-right: 0em;
+	transform: scale(1);
+}
+.level-1 li:hover > a{
+	background-color: rgba(0,0,0,.5);
+}
+.level-1 ul{
+	display: none;
+	position: absolute;
+	left: 100%;
+	width: 300px;
+	top: 6px;
+	background-color: rgba(255,255,255,.2);
+	box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.6);
+}
+.level-1 li:hover > ul{
+	display: block;
+}
